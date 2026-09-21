@@ -1,0 +1,20 @@
+package tn.esprit.tic.cce.autoloc.domain;
+
+import jakarta.persistence.*;
+import lombok.AllArgsConstructor;
+import lombok.Getter;
+import lombok.NoArgsConstructor;
+import lombok.Setter;
+
+@Entity
+@Table(name = "Equipement")
+@Getter
+@Setter
+@NoArgsConstructor
+@AllArgsConstructor
+public class Equipement {
+    @Id
+    @GeneratedValue(strategy = GenerationType.IDENTITY)
+    private Long idEquipement;
+    private String libelle;
+}
