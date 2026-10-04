@@ -21,4 +21,10 @@ public class Agence {
     private String ville;
     private String adresse;
     private String telephone;
+
+    @OneToMany(mappedBy = "agence")
+    private java.util.List<Employe> employes;
+
+    @OneToMany(mappedBy = "agence")
+    private java.util.List<Vehicule> vehicules;
 }

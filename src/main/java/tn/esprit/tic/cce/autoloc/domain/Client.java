@@ -25,4 +25,7 @@ public class Client {
     private String numPermis;
     private LocalDate dateInscription;
 
+    @OneToMany(mappedBy = "client")
+    private java.util.List<Reservation> reservations;
+
 }

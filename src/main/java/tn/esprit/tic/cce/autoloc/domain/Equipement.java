@@ -17,4 +17,7 @@ public class Equipement {
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long idEquipement;
     private String libelle;
+
+    @ManyToMany(mappedBy = "equipements")
+    private java.util.List<Vehicule> vehicules;
 }
